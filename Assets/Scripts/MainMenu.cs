@@ -1,3 +1,4 @@
+using EndlessGames.Util;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,6 +34,7 @@ namespace EndlessGames
         public void SelectionDown(GameObject button)
         {
             preSelection.SetActive(true);
+            Jukebox.PlayOneShot("mainmenu_gameselect_button_press");
         }
 
         public void SelectionUp(GameObject button)
@@ -41,6 +43,7 @@ namespace EndlessGames
             selection.SetActive(true);
             selection.transform.position = button.transform.position;
             PreviewAnim(button.GetComponent<MainMenuButton>().index);
+            Jukebox.PlayOneShot("mainmenu_gameselect_button_release");
         }
 
         public void SelectionEnter(GameObject button)

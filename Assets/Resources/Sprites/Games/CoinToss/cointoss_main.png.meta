@@ -1,0 +1,1188 @@
+fileFormatVersion: 2
+guid: 3240914ed0506244680f368a0c4425c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6826797482781034604
+    second: cointoss_main_0
+  - first:
+      213: -4490279158040936231
+    second: cointoss_main_1
+  - first:
+      213: -2496116295818079654
+    second: cointoss_main_2
+  - first:
+      213: 6748226906419322033
+    second: cointoss_main_3
+  - first:
+      213: -4746608465200529156
+    second: cointoss_main_4
+  - first:
+      213: -8110171253588234428
+    second: cointoss_main_5
+  - first:
+      213: 2217445438535525719
+    second: cointoss_main_6
+  - first:
+      213: 918470821961956298
+    second: cointoss_main_7
+  - first:
+      213: -1414137674771609726
+    second: cointoss_main_8
+  - first:
+      213: 1078613924031545225
+    second: cointoss_main_9
+  - first:
+      213: -2809634181214990925
+    second: cointoss_main_10
+  - first:
+      213: -582474123812325798
+    second: cointoss_main_11
+  - first:
+      213: 3698262725634274274
+    second: cointoss_main_12
+  - first:
+      213: 8113819139488247432
+    second: cointoss_main_13
+  - first:
+      213: 8123147376820962443
+    second: cointoss_main_14
+  - first:
+      213: -306379173141496321
+    second: cointoss_main_15
+  - first:
+      213: 7201649167210703138
+    second: cointoss_main_16
+  - first:
+      213: -984069368476505024
+    second: cointoss_main_17
+  - first:
+      213: 8974877985349146207
+    second: cointoss_main_18
+  - first:
+      213: -1941995504859303081
+    second: cointoss_main_19
+  - first:
+      213: 5290770542849407718
+    second: cointoss_main_20
+  - first:
+      213: 850900395233236689
+    second: cointoss_main_21
+  - first:
+      213: -570428507915199095
+    second: cointoss_main_22
+  - first:
+      213: -7139540626091407178
+    second: cointoss_main_23
+  - first:
+      213: -36127088284017270
+    second: cointoss_main_24
+  - first:
+      213: 604737142458084756
+    second: cointoss_main_25
+  - first:
+      213: -1788136632710088449
+    second: cointoss_main_26
+  - first:
+      213: -4644112237232357907
+    second: cointoss_main_27
+  - first:
+      213: -7193834247893722229
+    second: cointoss_main_28
+  - first:
+      213: 5180534468744318829
+    second: cointoss_main_29
+  - first:
+      213: -6492860825402998399
+    second: cointoss_main_30
+  - first:
+      213: 829458381375196554
+    second: cointoss_main_31
+  - first:
+      213: -4139445651436269173
+    second: cointoss_main_32
+  - first:
+      213: 8512847544130739263
+    second: cointoss_main_33
+  - first:
+      213: 1005802877952209684
+    second: cointoss_main_34
+  - first:
+      213: -101745918306344724
+    second: cointoss_main_35
+  - first:
+      213: -8811409333720098979
+    second: cointoss_main_36
+  - first:
+      213: -5357996774065337012
+    second: cointoss_main_37
+  - first:
+      213: -4046455435238348424
+    second: cointoss_main_38
+  - first:
+      213: -1271190106171688662
+    second: cointoss_main_39
+  - first:
+      213: -709457596386657471
+    second: cointoss_main_40
+  - first:
+      213: -591885443808070921
+    second: cointoss_main_41
+  - first:
+      213: -3251681690187024680
+    second: cointoss_main_42
+  - first:
+      213: 6879329693572243818
+    second: cointoss_main_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cointoss_main_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 601
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68c1b20428adbe50800000000000000
+      internalID: 6826797482781034604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 504
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d041a275e25fa1c0800000000000000
+      internalID: -4490279158040936231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 407
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5213b534730c5dd0800000000000000
+      internalID: -2496116295818079654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 310
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc5bd42e9486ad50800000000000000
+      internalID: 6748226906419322033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 213
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf04cdfdfb8a02eb0800000000000000
+      internalID: -4746608465200529156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 116
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fe942e632e27f80800000000000000
+      internalID: -8110171253588234428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 601
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75568b8b0e2f5ce10800000000000000
+      internalID: 2217445438535525719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 504
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb7a97a8501fbc00800000000000000
+      internalID: 918470821961956298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 407
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287cdb7f649ff5ce0800000000000000
+      internalID: -1414137674771609726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 310
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fb0bf26a108fe00800000000000000
+      internalID: 1078613924031545225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 213
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd82e7299c2209d0800000000000000
+      internalID: -2809634181214990925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 116
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a563f47ded2aae7f0800000000000000
+      internalID: -582474123812325798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_12
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 601
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3bf7fca5ed25330800000000000000
+      internalID: 3698262725634274274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_13
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 504
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e66fcb4831a9070800000000000000
+      internalID: 8113819139488247432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_14
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 407
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b844f8d30873bb070800000000000000
+      internalID: 8123147376820962443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_15
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 310
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdb25ae3c58fbbf0800000000000000
+      internalID: -306379173141496321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_16
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 279
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229e498f2c561f360800000000000000
+      internalID: 7201649167210703138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_17
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 279
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c6d998f12e752f0800000000000000
+      internalID: -984069368476505024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_18
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 248
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56953b0afb2d8c70800000000000000
+      internalID: 8974877985349146207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_19
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 248
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b471a065ac05e0800000000000000
+      internalID: -1941995504859303081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_20
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 154
+        width: 38
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eab3aae6c79c6940800000000000000
+      internalID: 5290770542849407718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 265
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6dd15b6610fcb00800000000000000
+      internalID: 850900395233236689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_22
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 636
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d55f75b4e6518f0800000000000000
+      internalID: -570428507915199095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 589
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b80a52a0a14bec90800000000000000
+      internalID: -7139540626091407178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_24
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 589
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ddf08ca96af7ff0800000000000000
+      internalID: -36127088284017270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_25
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 589
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49de2be1a35746800800000000000000
+      internalID: 604737142458084756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_26
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 542
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8b37dd4334f27e0800000000000000
+      internalID: -1788136632710088449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_27
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 542
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded78ba968ccc8fb0800000000000000
+      internalID: -4644112237232357907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_28
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 542
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b5149bddd5a2c90800000000000000
+      internalID: -7193834247893722229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_29
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 495
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f0c24d6a4f4e740800000000000000
+      internalID: 5180534468744318829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_30
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 495
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1810ecdda79b4e5a0800000000000000
+      internalID: -6492860825402998399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_31
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 495
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dc6d1d004d28b00800000000000000
+      internalID: 829458381375196554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_32
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 448
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b811b1b9c1cbd86c0800000000000000
+      internalID: -4139445651436269173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_33
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 417
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c18f60db5b32670800000000000000
+      internalID: 8512847544130739263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_34
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 417
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4133866736455fd00800000000000000
+      internalID: 1005802877952209684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_35
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 417
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0210a50a6869ef0800000000000000
+      internalID: -101745918306344724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_36
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 386
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d575d0555e597b580800000000000000
+      internalID: -8811409333720098979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_37
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 386
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d8526625294a5b0800000000000000
+      internalID: -5357996774065337012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_38
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 386
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8796b2f783a18d7c0800000000000000
+      internalID: -4046455435238348424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_39
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 355
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2935af5553db5ee0800000000000000
+      internalID: -1271190106171688662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_40
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 355
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bbb2033108726f0800000000000000
+      internalID: -709457596386657471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_41
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 355
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f27816235339c7f0800000000000000
+      internalID: -591885443808070921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_42
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 324
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6b2cd1bb4bfd2d0800000000000000
+      internalID: -3251681690187024680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cointoss_main_43
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 3
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61ab2678e9487f50800000000000000
+      internalID: 6879329693572243818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
