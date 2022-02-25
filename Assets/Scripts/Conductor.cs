@@ -72,7 +72,7 @@ namespace EndlessGames
                     musicSource.time = 0;
             }
 
-            GameManager.instance.SetCurrentEventToClosest(beat);
+            // GameManager.instance.SetCurrentEventToClosest(beat);
             songPosBeat = beat;
             songPositionInBeats = songPosBeat;
         }
@@ -84,10 +84,10 @@ namespace EndlessGames
 
             isPlaying = true;
             isPaused = false;
-
-            if (SongPosLessThanClipLength(time))
+            
+            // musicSource.time = time;
+            if (musicSource.clip != null)
             {
-                musicSource.time = time;
                 musicSource.PlayScheduled(Time.time);
             }
 

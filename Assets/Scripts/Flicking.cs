@@ -21,6 +21,7 @@ namespace EndlessGames
 
         private void Update()
         {
+#if UNITY_ANDROID
             foreach (Touch touch in Input.touches)
             {
                 if (touch.phase == TouchPhase.Began)
@@ -41,6 +42,28 @@ namespace EndlessGames
                     DetectFlick();
                 }
             }
+#else
+            if (Input.GetMouseButtonDown(0))
+            {
+                fingerUpPos = Input.mousePosition;
+                fingerDownPos = Input.mousePosition;
+            }
+
+            if (!detectFlickOnlyAfterRelease)
+            {
+                if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
+                {
+                    fingerDownPos = Input.mousePosition;
+                    DetectFlick();   
+                }
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                fingerDownPos = Input.mousePosition;
+                DetectFlick();
+            }
+#endif
         }
 
         private void DetectFlick()

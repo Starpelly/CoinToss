@@ -41,9 +41,8 @@ namespace EndlessGames
             if (isFlicking)
             {
                 velocity = (transform.position - previous) / Time.deltaTime;
-                Debug.Log(velocity);
                 if (flickTimes == 0)
-                flickTween = transform.DOMove(new Vector3(transform.position.x + (velocity.x / 24f), transform.position.y + (velocity.y / 24f)), flickSpeed).SetEase(Ease.OutExpo);
+                flickTween = transform.DOMove(new Vector3(transform.position.x + (velocity.x / 22f), transform.position.y + (velocity.y / 22f)), flickSpeed).SetEase(Ease.OutExpo);
                 flickTimes++;
                 isFlicking=false;
             }
@@ -52,37 +51,35 @@ namespace EndlessGames
         private void LateUpdate()
         {
             previous = transform.position;
-            int i = 0;
-            foreach (Touch touch in Input.touches)
+
+            if (PlayerInput.Touching())
             {
-                i++;
-                var t = Input.touches[0];
-                Vector3 pos = Camera.main.ScreenToWorldPoint(t.position);
+                var _pos = PlayerInput.TapPosition();
+                var pos = Camera.main.ScreenToWorldPoint(_pos);
                 pos = new Vector3(pos.x, pos.y, 0);
                 transform.position = pos;
+            }
+            if (PlayerInput.Tapped())
+            {
+                speed = 0.25f;
 
-                if (t.phase == TouchPhase.Began)
-                {
-                    speed = 0.25f;
+                flickTween.Kill();
+                InnerCircle.SetActive(true);
+                outerCircleTween.Kill();
+                outerCircleTween = OuterCircle.transform.DOScale(1.85f, speed).SetEase(Ease.OutExpo);
 
-                    flickTween.Kill();
-                    InnerCircle.SetActive(true);
-                    outerCircleTween.Kill();
-                    outerCircleTween = OuterCircle.transform.DOScale(1.85f, speed).SetEase(Ease.OutExpo);
+                Eyes.SetActive(true);
+                eyesTween.Kill();
+                eyesTween = Eyes.transform.DOLocalMoveY(0.96875f, speed).SetEase(Ease.OutExpo);
+            }
+            else if (PlayerInput.TappedRelease())
+            {
+                InnerCircle.SetActive(false);
+                outerCircleTween.Kill();
+                outerCircleTween = OuterCircle.transform.DOScale(0, speed);
 
-                    Eyes.SetActive(true);
-                    eyesTween.Kill();
-                    eyesTween = Eyes.transform.DOLocalMoveY(0.96875f, speed).SetEase(Ease.OutExpo);
-                }
-                else if (t.phase == TouchPhase.Ended)
-                {
-                    InnerCircle.SetActive(false);
-                    outerCircleTween.Kill();
-                    outerCircleTween = OuterCircle.transform.DOScale(0, speed);
-
-                    eyesTween.Kill();
-                    eyesTween = Eyes.transform.DOLocalMoveY(0.125f, speed).OnComplete(delegate { Eyes.SetActive(false); });
-                }
+                eyesTween.Kill();
+                eyesTween = Eyes.transform.DOLocalMoveY(0.125f, speed).OnComplete(delegate { Eyes.SetActive(false); });
             }
         }
     }

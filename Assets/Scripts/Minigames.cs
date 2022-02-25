@@ -73,6 +73,10 @@ namespace EndlessGames
                 {
                     
                 }),
+                new Minigame("coinToss", "Coin Toss", "", false, false, new List<GameAction>()
+                {
+                    
+                }),
             };
         }
     }

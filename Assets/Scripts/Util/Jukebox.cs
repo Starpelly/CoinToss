@@ -86,6 +86,11 @@ namespace EndlessGames.Util
         {
             return PlayOneShotScheduled($"games/{name}", targetTime);
         }
+
+        public static AudioClip LoadSong(string name)
+        {
+            return Resources.Load<AudioClip>($"Music/{name}");
+        }
     }
 
 }

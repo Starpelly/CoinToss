@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EndlessGames
+namespace EndlessGames.Util
 {
     public class Sound : MonoBehaviour
     {
