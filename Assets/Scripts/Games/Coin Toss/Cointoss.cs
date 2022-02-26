@@ -110,13 +110,12 @@ namespace EndlessGames.Games.CoinToss
 
         public void ResetGame()
         {
-            Debug.Log(Time.frameCount + "LOLs");
+            timePanel.SetActive(true);
             score = 0;
             panelCounting = false;
             Conductor.instance.musicSource.pitch = 1;
             SetScoreText();
             SetPanelText(0, true);
-            timePanel.SetActive(true);
         }
 
         private void SetScoreText()
