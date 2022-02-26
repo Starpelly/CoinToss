@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +10,8 @@ namespace EndlessGames.Games.CoinToss
     {
         [Header("Components")] 
         public GameObject player;
+
+        public GameObject timePanel;
         public Sprite[] seconds;
         public Sprite[] milliseconds;
         public Sprite[] scores;
@@ -78,6 +79,7 @@ namespace EndlessGames.Games.CoinToss
             isCounting = false;
 
             score++;
+            timePanel.SetActive(true);
             
             if (score > 9)
             {
@@ -114,18 +116,20 @@ namespace EndlessGames.Games.CoinToss
                 if (tossTimes > 8)
                 {
                     tossTimes = 0;
-                    if (Conductor.instance.musicSource.pitch >= 0.19)
-                    {
-                        Conductor.instance.musicSource.pitch -= 0.09f;   
-                    }
+                    
+                    Conductor.instance.musicSource.pitch -= 0.09f;
+
+                    Conductor.instance.musicSource.pitch = Mathf.Clamp(Conductor.instance.musicSource.pitch, 0.19f, 3f);
                 }
 
                 if (tossTimes > 0)
                 {
+                    timePanel.SetActive(false);
                     Conductor.instance.musicSource.clip = Jukebox.LoadSong($"Cointoss_{tossTimes - 1}"); 
                 }
                 else
                 {
+                    timePanel.SetActive(true);
                     Conductor.instance.musicSource.clip = null;
                     MultiSound.Play(new MultiSound.Sound[]
                     {

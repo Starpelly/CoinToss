@@ -2244,6 +2244,7 @@ MonoBehaviour:
   eligibleHitsList: []
   aceTimes: 0
   player: {fileID: 5800558401044704222}
+  timePanel: {fileID: 1846559849}
   seconds:
   - {fileID: -4139445651436269173, guid: 3240914ed0506244680f368a0c4425c0, type: 3}
   - {fileID: -7139540626091407178, guid: 3240914ed0506244680f368a0c4425c0, type: 3}

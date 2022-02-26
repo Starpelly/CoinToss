@@ -15,7 +15,7 @@ namespace EndlessGames
 
         public Ease easeType;
         private float speed;
-        private float flickSpeed = 0.35f;
+        private float flickSpeed = 0.65f;
 
         public Vector3 velocity;
         Vector3 previous;
@@ -30,7 +30,7 @@ namespace EndlessGames
 
         private void OnFlick(FlickData obj)
         {
-            speed = 0.38f;
+            speed = 0.58f;
             flickTimes = 0;
             isFlicking = true;
             // 15 seems to be the magic number:tm:
@@ -42,7 +42,7 @@ namespace EndlessGames
             {
                 velocity = (transform.position - previous) / Time.deltaTime;
                 if (flickTimes == 0)
-                flickTween = transform.DOMove(new Vector3(transform.position.x + (velocity.x / 22f), transform.position.y + (velocity.y / 22f)), flickSpeed).SetEase(Ease.OutExpo);
+                flickTween = transform.DOMove(new Vector3(transform.position.x + (velocity.x / 21f), transform.position.y + (velocity.y / 21f)), flickSpeed).SetEase(Ease.OutExpo);
                 flickTimes++;
                 isFlicking=false;
             }

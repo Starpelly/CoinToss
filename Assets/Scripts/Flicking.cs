@@ -12,6 +12,7 @@ namespace EndlessGames
     public class Flicking : MonoBehaviour
     {
         private Vector2 fingerDownPos;
+        private Vector3 lastFingerPos;
         private Vector2 fingerUpPos;
         public bool detectFlickOnlyAfterRelease = false;
 
@@ -51,7 +52,6 @@ namespace EndlessGames
 
             if (!detectFlickOnlyAfterRelease)
             {
-                if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
                 {
                     fingerDownPos = Input.mousePosition;
                     DetectFlick();   
@@ -60,9 +60,17 @@ namespace EndlessGames
 
             if (Input.GetMouseButtonUp(0))
             {
-                fingerDownPos = Input.mousePosition;
-                DetectFlick();
+                Vector3 mouseDelta = Input.mousePosition - lastFingerPos;
+                float minMoveSpeed = 8f;
+
+                if (mouseDelta.x < -minMoveSpeed || mouseDelta.x > minMoveSpeed || mouseDelta.y < -minMoveSpeed || mouseDelta.y > minMoveSpeed)
+                {
+                    fingerDownPos = Input.mousePosition;
+                    DetectFlick();
+                }
             }
+
+            lastFingerPos = Input.mousePosition;
 #endif
         }
 
