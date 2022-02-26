@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using EndlessGames.Util;
+using NaughtyBezierCurves;
 
 namespace EndlessGames.Games.CoinToss
 {
@@ -10,7 +11,7 @@ namespace EndlessGames.Games.CoinToss
     {
         [Header("Components")] 
         public GameObject player;
-
+        public GameObject coinMissPrefab;
         public GameObject timePanel;
         public Sprite[] seconds;
         public Sprite[] milliseconds;
@@ -24,10 +25,14 @@ namespace EndlessGames.Games.CoinToss
         private bool isTossingAnim;
         private bool isCounting;
         private int tossTimes = 0;
+        private bool panelCounting = false;
         public int score;
+        
+        public static Cointoss instance { get; set; }
         
         private void Start()
         {
+            instance = this;
             Flicking.OnFlick += Toss;
         }
         private void Update()
@@ -55,17 +60,15 @@ namespace EndlessGames.Games.CoinToss
                         Catch();
                     }
                 }
+                else if (state.late)
+                {
+                    Miss();
+                }
             }
 
-            if (isTossing && Conductor.instance.songPosition < 10f)
+            if (panelCounting && Conductor.instance.songPosition < 10f)
             {
-                second.sprite = seconds[(int)(Conductor.instance.songPosition)];
-                string songPosStr = Conductor.instance.songPosition.ToString();
-                if (songPosStr.Length >= 4)
-                {
-                    millisecond0.sprite = milliseconds[int.Parse(songPosStr[2].ToString())];
-                    millisecond1.sprite = milliseconds[int.Parse(songPosStr[3].ToString())];
-                }
+                SetPanelText(Conductor.instance.songPosition);
             }
         }
 
@@ -77,10 +80,47 @@ namespace EndlessGames.Games.CoinToss
             isTossing = false;
             isTossingAnim = true;
             isCounting = false;
+            panelCounting = false;
 
             score++;
             timePanel.SetActive(true);
             
+            SetScoreText();
+
+            ResetState();
+        }
+
+        private void Miss()
+        {
+            Instantiate(coinMissPrefab, this.transform).SetActive(true);
+            
+            Jukebox.PlayOneShotGame("coinToss/miss");
+            tossTimes = 0;
+            isTossing = false;
+            isTossingAnim = true;
+            isCounting = false;
+
+            ResetState();
+        }
+
+        public void GrabCoinFromMiss()
+        {
+            player.GetComponent<Animator>().Play("Miss", 0, 0);
+        }
+
+        public void ResetGame()
+        {
+            Debug.Log(Time.frameCount + "LOLs");
+            score = 0;
+            panelCounting = false;
+            Conductor.instance.musicSource.pitch = 1;
+            SetScoreText();
+            SetPanelText(0, true);
+            timePanel.SetActive(true);
+        }
+
+        private void SetScoreText()
+        {
             if (score > 9)
             {
                 string scoreStr = score.ToString();
@@ -97,8 +137,25 @@ namespace EndlessGames.Games.CoinToss
             {
                 scoreSprite.sprite = scores[score];
             }
-            
-            ResetState();
+        }
+
+        private void SetPanelText(float songPos, bool reset = false)
+        {
+            second.sprite = seconds[(int)(songPos)];
+            string songPosStr = songPos.ToString();
+            if (songPosStr.Length >= 4)
+            {
+                if (reset)
+                {
+                    millisecond0.sprite = milliseconds[0];
+                    millisecond1.sprite = milliseconds[0];   
+                }
+                else
+                {
+                    millisecond0.sprite = milliseconds[int.Parse(songPosStr[2].ToString())];
+                    millisecond1.sprite = milliseconds[int.Parse(songPosStr[3].ToString())];   
+                }
+            }
         }
 
         private void Toss(FlickData obj)
@@ -112,6 +169,7 @@ namespace EndlessGames.Games.CoinToss
                 Jukebox.PlayOneShotGame("coinToss/flick");
 
                 isCounting = true;
+                panelCounting = true;
 
                 if (tossTimes > 8)
                 {

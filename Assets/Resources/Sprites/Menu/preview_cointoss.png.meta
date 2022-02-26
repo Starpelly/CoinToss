@@ -26,6 +26,12 @@ TextureImporter:
   - first:
       213: 4400946188224801727
     second: preview_cointoss_7
+  - first:
+      213: 4819732074812611984
+    second: preview_cointoss_8
+  - first:
+      213: 6727131613451300358
+    second: preview_cointoss_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -143,9 +149,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 609
-        width: 154
-        height: 87
+        y: 720
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,9 +170,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 522
-        width: 154
-        height: 87
+        y: 640
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,9 +191,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 435
-        width: 154
-        height: 87
+        y: 560
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,9 +212,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 348
-        width: 154
-        height: 87
+        y: 480
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,9 +233,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 261
-        width: 154
-        height: 87
+        y: 400
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,9 +254,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 174
-        width: 154
-        height: 87
+        y: 320
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,9 +275,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 87
-        width: 154
-        height: 87
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,9 +296,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 154
-        height: 87
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,6 +308,48 @@ TextureImporter:
       bones: []
       spriteID: fbbafb0bd3d431d30800000000000000
       internalID: 4400946188224801727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preview_cointoss_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d13c739c023e240800000000000000
+      internalID: 4819732074812611984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preview_cointoss_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ea0118f829b5d50800000000000000
+      internalID: 6727131613451300358
       vertices: []
       indices: 
       edges: []

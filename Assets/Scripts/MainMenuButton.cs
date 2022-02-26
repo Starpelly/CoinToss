@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +13,9 @@ namespace EndlessGames
         private bool cursorOver;
 
         public int index = 0;
+
+        private float lastTap = 0.0f;
+        private float interval = 0.4f;
         private void Start()
         {
             AddTrigger((data) => { MainMenu.instance.SelectionDown(this.gameObject); preSelectionActive = true; }, EventTriggerType.PointerDown);
@@ -19,9 +23,20 @@ namespace EndlessGames
             {
                 if (cursorOver)
                 {
-                    MainMenu.instance.SelectionUp(this.gameObject);
+                    if (lastTap + interval > Time.time)
+                    {
+                        GlobalGameManager.LoadScene(1, 0.45f, 2, 0);
+                        MainMenu.instance.SelectionUp(this.gameObject, true);
+                        Conductor.instance.musicSource.DOFade(0, 0.85f);
+                    }
+                    else
+                    {
+                        MainMenu.instance.SelectionUp(this.gameObject);   
+                    }
                     preSelectionActive = false; 
                 }
+
+                lastTap = Time.time;
             }, EventTriggerType.PointerUp);
             AddTrigger((data) => 
             {

@@ -17,6 +17,7 @@ namespace EndlessGames
         public bool detectFlickOnlyAfterRelease = false;
 
         public float minDistanceForFlick = 20f;
+        float minMoveSpeed = 8f;
 
         public static event Action<FlickData> OnFlick = delegate { };
 
@@ -39,9 +40,16 @@ namespace EndlessGames
 
                 if (touch.phase == TouchPhase.Ended)
                 {
-                    fingerDownPos = touch.position;
-                    DetectFlick();
+                    Vector3 mouseDelta = touch.position - lastFingerPos;
+
+                    if (mouseDelta.x < -minMoveSpeed || mouseDelta.x > minMoveSpeed || mouseDelta.y < -minMoveSpeed || mouseDelta.y > minMoveSpeed)
+                    {
+                        fingerDownPos = touch.position;
+                        DetectFlick();
+                    }
                 }
+
+                lastFingerPos = touch.position;
             }
 #else
             if (Input.GetMouseButtonDown(0))
@@ -61,7 +69,6 @@ namespace EndlessGames
             if (Input.GetMouseButtonUp(0))
             {
                 Vector3 mouseDelta = Input.mousePosition - lastFingerPos;
-                float minMoveSpeed = 8f;
 
                 if (mouseDelta.x < -minMoveSpeed || mouseDelta.x > minMoveSpeed || mouseDelta.y < -minMoveSpeed || mouseDelta.y > minMoveSpeed)
                 {

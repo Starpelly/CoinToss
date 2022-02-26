@@ -37,13 +37,20 @@ namespace EndlessGames
             Jukebox.PlayOneShot("mainmenu_gameselect_button_press");
         }
 
-        public void SelectionUp(GameObject button)
+        public void SelectionUp(GameObject button, bool game = false)
         {
             preSelection.SetActive(false);
             selection.SetActive(true);
             selection.transform.position = button.transform.position;
             PreviewAnim(button.GetComponent<MainMenuButton>().index);
-            Jukebox.PlayOneShot("mainmenu_gameselect_button_release");
+            if (game)
+            {
+                Jukebox.PlayOneShot("mainmenu_gameselect_button_release_game");   
+            }
+            else
+            {
+                Jukebox.PlayOneShot("mainmenu_gameselect_button_release");
+            }
         }
 
         public void SelectionEnter(GameObject button)
