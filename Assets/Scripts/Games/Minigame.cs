@@ -6,7 +6,7 @@ namespace EndlessGames.Games
 {
     public class Minigame : MonoBehaviour
     {
-        public static float earlyTime = 0.88f, perfectTime = 0.96f, lateTime = 1.03f, endTime = 1.15f;
+        public static float earlyTime = 0.92f, perfectTime = 0.96f, lateTime = 1.03f, endTime = 1.15f;
         public List<Minigame.Eligible> EligibleHits = new List<Minigame.Eligible>();
 
         [System.Serializable]

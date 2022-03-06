@@ -40,7 +40,7 @@ namespace EndlessGames
 
                 if (touch.phase == TouchPhase.Ended)
                 {
-                    Vector3 mouseDelta = touch.position - lastFingerPos;
+                    Vector3 mouseDelta = touch.position - (Vector2)lastFingerPos;
 
                     if (mouseDelta.x < -minMoveSpeed || mouseDelta.x > minMoveSpeed || mouseDelta.y < -minMoveSpeed || mouseDelta.y > minMoveSpeed)
                     {

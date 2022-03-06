@@ -106,6 +106,8 @@ namespace EndlessGames
         {
             this.time = time;
 
+            songPos = 0;
+            songPosition = 0;
             songPosBeat = 0;
             songPositionInBeats = 0;
 
