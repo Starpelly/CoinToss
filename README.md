@@ -1,2 +1,2 @@
 # EndlessGamesDS
-Mobile port of Rhythm Heaven DS's endless games.
+Mobile port of Coin Toss from Rhythm Heaven DS
