@@ -34,8 +34,6 @@ namespace EndlessGames.Util
             ms.startBeat = sounds[0].beat;
             ms.game = game;
             gameObj.name = "MultiSound";
-
-            GameManager.instance.SoundObjects.Add(gameObj);
         }
 
         private void LateUpdate()

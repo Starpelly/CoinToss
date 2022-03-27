@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -316,6 +317,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      preview_samuraislice_0: 519362650223929114
+      preview_samuraislice_2: 3885258166432498878
+      preview_samuraislice_5: 9178017669692300554
+      preview_samuraislice_7: 6382245474283785339
+      preview_samuraislice_4: -4734648209732918094
+      preview_samuraislice_6: 6926899031079374981
+      preview_samuraislice_3: -2956906791472235811
+      preview_samuraislice_1: 8499194646157007649
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

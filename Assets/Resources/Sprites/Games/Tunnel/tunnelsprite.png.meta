@@ -146,6 +146,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -155,8 +157,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -177,9 +179,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1080,6 +1085,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tunnelsprite_11: 869449970654613523
+      tunnelsprite_35: -7882701114033404539
+      tunnelsprite_24: 3357366742374355157
+      tunnelsprite_36: 4456548761293497065
+      tunnelsprite_6: 6046423508282162524
+      tunnelsprite_27: -7787575561425497325
+      tunnelsprite_40: 7203173663170187970
+      tunnelsprite_32: -2638972046149821068
+      tunnelsprite_10: 1325314089182992233
+      tunnelsprite_7: 3880498509109546632
+      tunnelsprite_26: 1849887346658966953
+      tunnelsprite_5: -2594473052021058084
+      tunnelsprite_4: 4285521394533708440
+      tunnelsprite_21: -6847822224604753891
+      tunnelsprite_15: 4339248960006152573
+      tunnelsprite_33: -3549478418105266815
+      tunnelsprite_1: 2519222681128290156
+      tunnelsprite_23: -1194583526308491480
+      tunnelsprite_37: 3082279236133123131
+      tunnelsprite_0: 4791756794496325431
+      tunnelsprite_25: 3996636631601688979
+      tunnelsprite_12: 7428927899390197113
+      tunnelsprite_17: 5454678179077630213
+      tunnelsprite_22: -6025716459106715486
+      tunnelsprite_2: -4613364755681142493
+      tunnelsprite_9: -7465041024049965135
+      tunnelsprite_30: -4451039498771732703
+      tunnelsprite_16: 7762133431427300627
+      tunnelsprite_39: -2567428158413053633
+      tunnelsprite_38: -539784867733583724
+      tunnelsprite_29: -7340674602200741119
+      tunnelsprite_19: 135588182817500710
+      tunnelsprite_31: -125857234084762652
+      tunnelsprite_3: 7050059422728394286
+      tunnelsprite_8: -8018818844462248283
+      tunnelsprite_18: -3800409053030442829
+      tunnelsprite_20: -94466297953821064
+      tunnelsprite_13: -2653222731483452231
+      tunnelsprite_34: -3209507209880657375
+      tunnelsprite_28: 8602389795688895765
+      tunnelsprite_14: -7569860737180257377
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

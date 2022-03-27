@@ -124,12 +124,12 @@ namespace EndlessGames
 
             if (isPlaying)
             {
-                time += Time.unscaledDeltaTime * musicSource.pitch;
+                time += Time.deltaTime * musicSource.pitch;
 
                 songPos = time;
                 songPosition = songPos;
 
-                songPosBeat += ((Time.unscaledDeltaTime * musicSource.pitch) / secPerBeat);
+                songPosBeat += ((Time.deltaTime * musicSource.pitch) / secPerBeat);
                 songPositionInBeats = songPosBeat;
                 // songPositionInBeats = Time.deltaTime / secPerBeat;
 

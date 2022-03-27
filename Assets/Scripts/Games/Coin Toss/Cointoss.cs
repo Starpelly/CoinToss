@@ -21,6 +21,8 @@ namespace EndlessGames.Games.CoinToss
         public SpriteRenderer scoreSprite, scoreSprite2;
         [SerializeField] private SpriteRenderer dialogue;
         [SerializeField] private Sprite[] dialogueSpr;
+        public GameObject ScoreInputField;
+        public TMPro.TMP_Text pitchTEst;
         
         [Header("Properties")]
         private bool isTossing;
@@ -33,8 +35,11 @@ namespace EndlessGames.Games.CoinToss
         private bool hasDoneTutorial = false;
         private int totalTossTimes = 0;
         private bool inActive = true;
+        public float pitch;
 
         private float spamTimer = 0;
+
+        public TMPro.TMP_Text tooltipText;
 
         public static Cointoss instance { get; set; }
         
@@ -146,10 +151,16 @@ namespace EndlessGames.Games.CoinToss
 
         public void ResetGame()
         {
+            if (score >= 1)
+            {
+                ScoreInputField.SetActive(true);
+                LeaderboardController.instance.currentScore = score;
+            }
+
             timePanel.SetActive(true);
             score = 0;
             panelCounting = false;
-            Conductor.instance.musicSource.pitch = 1;
+            pitch = 1;
             Conductor.instance.musicSource.time = 0;
             Conductor.instance.musicSource.clip = null;
             Conductor.instance.Stop(0);
@@ -177,6 +188,11 @@ namespace EndlessGames.Games.CoinToss
                 else
                 {
                     scoreSprite.sprite = scores[score];
+                    scoreSprite2.sprite = null;
+
+                    scoreSprite.transform.localPosition = new Vector3(0.03125f, scoreSprite.transform.localPosition.y);
+
+                    scoreSprite2.gameObject.SetActive(false);
                 }
             }
         }
@@ -211,6 +227,10 @@ namespace EndlessGames.Games.CoinToss
 
             if (!isTossing) player.GetComponent<Animator>().Play("Flick_Coin", 0,0 );
             else player.GetComponent<Animator>().Play("Flick", 0,0 );
+
+            if (ScoreInputField.gameObject.activeInHierarchy)
+                ScoreInputField.SetActive(false);
+
             isTossingAnim = true;
             if (!isTossing)
             {
@@ -221,22 +241,27 @@ namespace EndlessGames.Games.CoinToss
                 isCounting = true;
                 panelCounting = true;
 
+
                 if (tossTimes > 8)
                 {
                     tossTimes = 0;
-                    
-                    Conductor.instance.musicSource.pitch -= 0.09f;
 
-                    Conductor.instance.musicSource.pitch = Mathf.Clamp(Conductor.instance.musicSource.pitch, 0.19f, 3f);
+                    pitch -= 0.09f;
+
+                    pitch = Mathf.Clamp(pitch, 0.19f, 3f);
+                    Conductor.instance.musicSource.pitch = this.pitch;
                 }
+
+                Conductor.instance.SetBeat(0);
+                Conductor.instance.Play(0);
 
                 if (tossTimes > 0)
                 {
                     timePanel.SetActive(false);
                     if (score > 27)
                     {
-                        int[] first = new int[] { 0,2,4,6,8,10 };
-                        int[] second = new int[] { 1,3,5,7,9,11 };
+                        int[] first = new int[] { 0, 2, 4, 6, 8, 10 };
+                        int[] second = new int[] { 1, 3, 5, 7, 9, 11 };
                         if (score % 2 == 0)
                             Conductor.instance.musicSource.clip = Jukebox.LoadSong($"CoinToss/Cointoss_{first[Random.Range(0, first.Length)]}");
                         else
@@ -244,8 +269,10 @@ namespace EndlessGames.Games.CoinToss
                     }
                     else
                     {
-                        Conductor.instance.musicSource.clip = Jukebox.LoadSong($"CoinToss/Cointoss_{tossTimes - 1}"); 
+                        Conductor.instance.musicSource.clip = Jukebox.LoadSong($"CoinToss/Cointoss_{tossTimes - 1}");
                     }
+                    Conductor.instance.musicSource.Play();
+                    Conductor.instance.musicSource.pitch = this.pitch;
                 }
                 else
                 {
@@ -261,9 +288,10 @@ namespace EndlessGames.Games.CoinToss
                         new MultiSound.Sound("coinToss/cowbell2", 5),
                         new MultiSound.Sound("coinToss/cowbell1", 6),
                     });
+                    Conductor.instance.musicSource.pitch = this.pitch;
                 }
-                Conductor.instance.SetBeat(0);
-                Conductor.instance.Play(0);
+
+
                 tossTimes++;
             }
         }

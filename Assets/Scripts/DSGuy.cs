@@ -8,6 +8,8 @@ namespace EndlessGames
 {
     public class DSGuy : MonoBehaviour
     {
+        public static DSGuy instance;
+
         [SerializeField] private GameObject Eyes;
         [SerializeField] private GameObject OuterCircle;
         public GameObject InnerCircle;
@@ -15,7 +17,7 @@ namespace EndlessGames
 
         public Ease easeType;
         private float speed;
-        private float flickSpeed = 0.65f;
+        private float flickSpeed = 0.75f;
 
         public Vector3 velocity;
         Vector3 previous;
@@ -23,8 +25,11 @@ namespace EndlessGames
         bool isFlicking;
         int flickTimes = 0;
 
+        public new bool enabled;
+
         private void Start()
         {
+            instance = this;
             Flicking.OnFlick += OnFlick;
         }
 
@@ -42,7 +47,9 @@ namespace EndlessGames
             {
                 velocity = (transform.position - previous) / Time.deltaTime;
                 if (flickTimes == 0)
-                flickTween = transform.DOMove(new Vector3(transform.position.x + (velocity.x / 21f), transform.position.y + (velocity.y / 21f)), flickSpeed).SetEase(Ease.OutExpo);
+                {
+                    flickTween = transform.DOMove(new Vector3(transform.position.x + (velocity.x / 21f), transform.position.y + (velocity.y / 21f)), flickSpeed).SetEase(Ease.OutExpo);
+                }
                 flickTimes++;
                 isFlicking=false;
             }
@@ -61,16 +68,20 @@ namespace EndlessGames
             }
             if (PlayerInput.Tapped())
             {
-                speed = 0.25f;
+                if (enabled)
+                {               
+                    speed = 0.35f;
 
-                flickTween.Kill();
-                InnerCircle.SetActive(true);
-                outerCircleTween.Kill();
-                outerCircleTween = OuterCircle.transform.DOScale(1.85f, speed).SetEase(Ease.OutExpo);
+                    flickTween.Kill();
+                    InnerCircle.SetActive(true);
+                    outerCircleTween.Kill();
+                    outerCircleTween = OuterCircle.transform.DOScale(1.85f, speed).SetEase(Ease.OutExpo);
 
-                Eyes.SetActive(true);
-                eyesTween.Kill();
-                eyesTween = Eyes.transform.DOLocalMoveY(0.96875f, speed).SetEase(Ease.OutExpo);
+                    Eyes.SetActive(true);
+                    eyesTween.Kill();
+                    eyesTween = Eyes.transform.DOLocalMoveY(0.96875f, speed).SetEase(Ease.OutExpo);
+                }
+
             }
             else if (PlayerInput.TappedRelease())
             {

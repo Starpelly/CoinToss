@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -268,6 +269,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      preview_rhythmove_4: -864623742048685983
+      preview_rhythmove_5: 8071763306148702103
+      preview_rhythmove_2: 3567766754957532043
+      preview_rhythmove_0: -7121662463690790652
+      preview_rhythmove_1: 4468908753984466842
+      preview_rhythmove_3: 1240491575223762252
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -21,15 +21,13 @@ namespace EndlessGames.Games
         {
             state.gameObject = g;
             state.createBeat = createBeat;
-
-            autoPlayEnabledOnStart = GameManager.instance.autoplay;
         }
 
         private void CheckForAce(float normalizedBeat, bool autoPlay = false)
         {
             if (aceTimes == 0)
             {
-                if (GameManager.instance.autoplay && normalizedBeat > 0.99f || autoPlay && normalizedBeat > 0.99f)
+                if (normalizedBeat > 0.99f || autoPlay && normalizedBeat > 0.99f)
                 {
                     OnAce();
                     // aceTimes++;

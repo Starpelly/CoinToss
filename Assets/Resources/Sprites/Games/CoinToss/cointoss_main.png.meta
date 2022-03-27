@@ -188,10 +188,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -230,6 +232,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1468,9 +1471,65 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      cointoss_main_7: 918470821961956298
+      cointoss_main_0: 6826797482781034604
+      cointoss_main_21: 850900395233236689
+      cointoss_main_38: -4046455435238348424
+      cointoss_main_33: 8512847544130739263
+      cointoss_main_14: 8123147376820962443
+      cointoss_main_45: 5354563895618460379
+      cointoss_main_37: -5357996774065337012
+      cointoss_main_4: -4746608465200529156
+      cointoss_main_34: 1005802877952209684
+      cointoss_main_32: -4139445651436269173
+      cointoss_main_55: 3549357255262769345
+      cointoss_main_46: 4787084656915098402
+      cointoss_main_30: -6492860825402998399
+      cointoss_main_12: 3698262725634274274
+      cointoss_main_24: -36127088284017270
+      cointoss_main_47: 5071698799049997172
+      cointoss_main_42: -3251681690187024680
+      cointoss_main_50: 4700668129729730888
+      cointoss_main_41: -591885443808070921
+      cointoss_main_8: -1414137674771609726
+      cointoss_main_18: 8974877985349146207
+      cointoss_main_22: -570428507915199095
+      cointoss_main_36: -8811409333720098979
+      cointoss_main_1: -4490279158040936231
+      cointoss_main_23: -7139540626091407178
+      cointoss_main_44: -4090056248669547207
+      cointoss_main_53: 3078387213067619225
+      cointoss_main_26: -1788136632710088449
+      cointoss_main_9: 1078613924031545225
+      cointoss_main_39: -1271190106171688662
+      cointoss_main_2: -2496116295818079654
+      cointoss_main_10: -2809634181214990925
+      cointoss_main_19: -1941995504859303081
+      cointoss_main_51: 1398861900758400533
+      cointoss_main_13: 8113819139488247432
+      cointoss_main_48: -1307749793802160957
+      cointoss_main_5: -8110171253588234428
+      cointoss_main_43: 6879329693572243818
+      cointoss_main_16: 7201649167210703138
+      cointoss_main_25: 604737142458084756
+      cointoss_main_35: -101745918306344724
+      cointoss_main_52: 4841327312954012116
+      cointoss_main_6: 2217445438535525719
+      cointoss_main_11: -582474123812325798
+      cointoss_main_27: -4644112237232357907
+      cointoss_main_31: 829458381375196554
+      cointoss_main_28: -7193834247893722229
+      cointoss_main_29: 5180534468744318829
+      cointoss_main_54: -2851507385159829035
+      cointoss_main_20: 5290770542849407718
+      cointoss_main_17: -984069368476505024
+      cointoss_main_3: 6748226906419322033
+      cointoss_main_40: -709457596386657471
+      cointoss_main_15: -306379173141496321
+      cointoss_main_49: -4192759178114161645
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
